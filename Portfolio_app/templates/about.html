@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row my-4 about">
+ <div class="col-4 d-flex justify-content-center align-items-center ">
+    <img src="{% static 'images/img.jpg' %}" alt="image" class="about_image">
+ </div>
+
+ <div class="col-7 text-left text-light ">
+     <h2> Hello !</h2>
+     <p class="fs-6 ">
+       I'm a passionate Python and 
+        Django developer with a solid foundation in web 
+        development technologies such as HTML and CSS. Over the years, I've honed my
+         skills in building dynamic web applications, focusing on 
+         leveraging Django's powerful features for efficient and scalable solutions.
+      </p>
+      <p class="fs-6">
+        As technology continues to evolve, so do my interests and goals. I'm currently
+     diving into the exciting world of Artificial Intelligence and Machine Learning.
+     I'm actively learning and experimenting with various AI and machine learning frameworks, 
+     aiming to leverage these technologies in future projects.
+      </p>
+
+ </div>
+</div>
+<div class="tec-slide row my-2 ">
+    <h3 class="text-center " style="color:#4fffb0"> <b>My Tech Stack</b> </h3>
+
+    <div class="  d-flex justify-content-around align-items-center">
+      <img
+          src="{% static 'images/html.png' %}"
+          width="70"
+          height="70"
+          alt="HTML Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/css.png' %}"
+          width="70"
+          height="70"
+          alt="CSS Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/python.jpg' %}"
+          width="60"
+          height="60"
+          alt="Python Logo"
+          class="img-fluid"
+      />
+
+      <img
+          src="{% static 'images/django.png' %}"
+          width="70"
+          height="70"
+          alt="Django Logo"
+          class="img-fluid"
+      />
+  </div>
+
+</div>
+
+
+
+{% endblock content %}

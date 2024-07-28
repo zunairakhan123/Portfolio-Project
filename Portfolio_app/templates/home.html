@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row my-4">
+  <div class="col-12 d-flex justify-content-center align-items-center ">
+    <div class="circular-image-container">
+      <img class="circular-image" src=" {% static 'images/img.jpg' %}" alt="Image">
+    </div>
+  </div>
+</div>
+
+<div class="fade-in-text  col-12 text-center mt-3">
+  <h4 class="title"> Hi, my name is </h4>
+    <div class="name">
+      <h1> Zunaira Hawwar </h1>
+      <h1> I am a django developer </h1>
+    </div>
+</div>
+
+<div class="col-12 text-center mt-3">
+  <div class="col-12 d-flex justify-content-center align-items-center ">
+      <a href="https://www.linkedin.com/in/zunaira-hawwar-b678a7318/" target="_blank" class="ms-3">
+        <img src="{% static 'images/linkendin.png' %}" alt="linkedin" width="50" height="50" class="social_links">
+      </a>
+
+      <a href="https://github.com/zunairakhan123" target="_blank" class="ms-3">
+        <img src="{% static 'images/github.png' %}" alt="youtube" width="50" height="50" class="social_links">
+      </a>
+
+      <a href="https://leetcode.com/u/Zunairakhan321/" target="_blank" class="ms-3">
+        <img src="{% static 'images/leetcode.jpg' %}" alt="instagram" width="50" height="50" class="social_links">
+      </a>
+    </div>
+</div>
+</div>
+
+
+{% endblock content %}

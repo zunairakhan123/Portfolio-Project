@@ -1,0 +1,241 @@
+body{
+    background-color: #1b201b;
+}
+.navbar-nav .nav-link:hover{
+    font-weight: bold;
+    color: rgb(5, 243, 243);
+}
+.navbar-nav .nav-link{
+    font-size: 20px;
+    color: white;
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar-dark{
+background-color: black;
+}
+.circular-image-container{
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image{
+width:120%;
+height: 100%;
+display: block;
+}
+
+.name{
+    color: #00FFFF;
+}
+
+.title{
+    color: #D6CADD;
+}
+/* CSS */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 2;
+    }
+  }
+  
+  .fade-in-text {
+    opacity: 0; /* Start with hidden text */
+    animation: fadeIn 2s forwards; /* 2s duration */
+  }
+  
+.social_links{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* CSS */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .social_links {
+    animation: slideIn 1.5s forwards; /* 1s duration */
+  }
+  
+.about_image{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+  
+  .tec-slide {
+    opacity: 0; /* Start with hidden text */
+    animation: fadeIn 1.5s forwards;  /* 1s duration */
+  }
+  /* CSS */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade {
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+  }
+  .form-container{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #928f8f;
+}
+@media screen and (max-width:600px)
+{
+    .about {
+      flex-direction: column; /* Stack elements vertically */
+  }
+  .about .col-4, .about .col-7 {
+    width: 100%; /* Ensure full width */
+    max-width: 100%; /* No max width constraint */
+}
+
+  .about_image {
+    width: 50%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .form .col-4,
+  .form .col-5,
+  .form .offset-1 {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 3px; /* Add some padding for mobile spacing */
+  }
+
+  .form .name {
+      margin-top: 0px;
+      font-size: 2.2rem;
+      text-align: center; /* Center align the name */
+      margin-left: 0px;
+  }
+
+  .form-container {
+      width: 80%;
+      padding: 5px;
+      margin-left: 5px; /* Adjust padding for mobile */
+  }
+
+  .form-group {
+      width: 80%;
+  }
+
+  .social_links {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      margin: 2px; /* Reduce margin for closer placement */
+  }
+
+  .btn {
+      width: 100%;
+      margin-top: 5px; /* Ensure the button is full-width */
+  }
+  .navbar-toggler {
+    position: absolute; /* Position the toggler */
+    top: 10px; /* Adjust top spacing */
+    right: 10px; /* Align to left */
+  }
+
+}
+
+
+@media screen and (max-width:900px) and (min-width:600px)
+{
+    .about {
+      flex-direction: column; /* Stack elements vertically */
+  }
+  .about .col-4, .about .col-7 {
+    width: 100%; /* Ensure full width */
+    max-width: 100%; /* No max width constraint */
+}
+
+  .about_image {
+    width: 50%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .form .col-4,
+  .form .col-5,
+  .form .offset-1 {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 3px; /* Add some padding for mobile spacing */
+  }
+
+  .form .name {
+      margin-top: 0px;
+      font-size: 2.2rem;
+      text-align: center; /* Center align the name */
+      margin-left: 0px;
+  }
+
+  .form-container {
+      width: 80%;
+      padding: 5px;
+      margin-left: 25px; /* Adjust padding for mobile */
+  }
+
+  .form-group {
+      width: 80%;
+  }
+
+  .social_links {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      margin: 2px; /* Reduce margin for closer placement */
+  }
+
+  .btn {
+      width: 100%;
+      margin-top: 5px; /* Ensure the button is full-width */
+  }
+  .navbar-toggler {
+    position: absolute; /* Position the toggler */
+    top: 10px; /* Adjust top spacing */
+    right: 10px; /* Align to left */
+  }
+
+}
